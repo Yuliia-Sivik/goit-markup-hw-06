@@ -562,7 +562,7 @@ address {
   margin-left: 16px;
   width: 24px;
   height: 24px;
-  fill: #fff;
+  fill: currentColor;
 }
 
 .container-footer:nth-child(1) {
@@ -909,4 +909,10 @@ input[type="checkbox"]:focus + .checkbox-label .custom-checkbox {
   background-color: #404bbf;
   border: none; /* обнулення бордеру при наведенні та фокусі */
   outline: none; /* додатково для фокусу */
+}
+.modal-btn:hover {
+  border: none;
+}
+.modal-btn:focus {
+  border: none;
 }
