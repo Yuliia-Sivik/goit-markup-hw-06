@@ -523,20 +523,6 @@ address {
   color: #ffffff;
 }
 
-.subscribe-input {
-  width: 264px;
-  height: 40px;
-  padding: 8px 12px;
-  font-size: 14px;
-  color: #ffffff;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  outline: none;
-  flex: none;
-}
-
 .subscribe-btn {
   display: flex;
   align-items: center;
@@ -622,7 +608,7 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -816,8 +802,7 @@ img {
 }
 
 .checkbox-label {
-  display: flex;
-  align-items: center;
+  display: inline-block;
   gap: 8px;
   font-weight: 400;
   font-size: 12px;
@@ -840,6 +825,7 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0;
   fill: transparent;
+  position: static;
 }
 
 .checkbox-icon {
@@ -854,8 +840,11 @@ input[type="checkbox"]:checked + label .custom-checkbox {
   border: none;
 }
 
+:root {
+  --checkbox-checked-color: #f4f4fd; /* колір іконки при checked */
+}
 input[type="checkbox"]:checked + label .checkbox-icon {
-  fill: #f4f4fd;
+  fill: var(--checkbox-checked-color);
 }
 
 .checkbox-label:hover .custom-checkbox,
@@ -901,4 +890,5 @@ input[type="checkbox"]:focus + label .custom-checkbox {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #404bbf;
+  border: none;
 }
