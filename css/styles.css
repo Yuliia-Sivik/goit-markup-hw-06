@@ -506,6 +506,15 @@ address {
   display: flex;
   gap: 24px;
 }
+
+.subscribe-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: #ffffff;
+}
+
 .subscribe-input {
   width: 264px;
   height: 40px;
@@ -519,6 +528,7 @@ address {
   border-radius: 4px;
   color: #ffffff;
 }
+
 .subscribe-input::placeholder {
   color: #ffffff;
 }
@@ -528,6 +538,8 @@ address {
   align-items: center;
   justify-content: center;
   gap: 16px;
+  min-width: 165px;
+  height: 40px;
   padding: 8px 24px;
   background-color: #4d5ae5;
   color: #fff;
@@ -539,9 +551,6 @@ address {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  max-width: 165px;
-  height: 40px;
-  flex: none;
   font-family: "Roboto", sans-serif;
 }
 
@@ -840,13 +849,20 @@ input[type="checkbox"]:checked + label .custom-checkbox {
   border: none;
 }
 
+/* Змінна для кольору при checked */
 :root {
-  --checkbox-checked-color: #f4f4fd; /* колір іконки при checked */
+  --checkbox-checked-color: #f4f4fd;
 }
-input[type="checkbox"]:checked + label .checkbox-icon {
+
+/* Коли input checked, змінюємо fill іконки всередині span */
+input[type="checkbox"]:checked
+  + .checkbox-label
+  .custom-checkbox
+  .checkbox-icon {
   fill: var(--checkbox-checked-color);
 }
 
+/* Hover та focus для бордеру custom-checkbox */
 .checkbox-label:hover .custom-checkbox,
 input[type="checkbox"]:focus + label .custom-checkbox {
   border-color: #4d5ae5;
@@ -890,5 +906,6 @@ input[type="checkbox"]:focus + label .custom-checkbox {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #404bbf;
-  border: none;
+  border: none; /* обнулення бордеру при наведенні та фокусі */
+  outline: none; /* додатково для фокусу */
 }
