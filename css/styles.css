@@ -506,24 +506,22 @@ address {
   display: flex;
   gap: 24px;
 }
-.subscribe-input{
+.subscribe-input {
   width: 264px;
   height: 40px;
-  border:  1px solid #ffffff; 
+  border: 1px solid #ffffff;
   background-color: transparent;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
   padding-left: 16px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
-
 }
 .subscribe-input::placeholder {
   color: #ffffff;
 }
-
 
 .subscribe-input {
   width: 264px;
@@ -558,7 +556,7 @@ address {
   max-width: 165px;
   height: 40px;
   flex: none;
-  font-family: "Roboto", sans-serif 
+  font-family: "Roboto", sans-serif;
 }
 
 .subscribe-btn:hover {
@@ -775,15 +773,15 @@ img {
   letter-spacing: 0.04em;
   padding: 8px 10px;
   box-sizing: border-box;
-  border: 1px solid rgba(46, 47, 66, 0.4)
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   resize: none;
   margin-bottom: 16px;
   color: rgba(46, 47, 66, 0.4);
-   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: transparent;
-  padding: 8px 16px; 
-  outline: transparent; 
+  padding: 8px 16px;
+  outline: transparent;
 }
 
 .form-textarea::placeholder {
@@ -835,9 +833,11 @@ img {
   justify-content: center;
   width: 16px;
   height: 16px;
-  border:  1px solid rgba(46, 47, 66, 0.4); 
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0;
   fill: transparent;
 }
@@ -852,11 +852,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 input[type="checkbox"]:checked + label .custom-checkbox {
   background-color: #404bbf;
   border: none;
-  
 }
 
 input[type="checkbox"]:checked + label .checkbox-icon {
-  fill: #F4F4FD;
+  fill: #f4f4fd;
 }
 
 .checkbox-label:hover .custom-checkbox,
