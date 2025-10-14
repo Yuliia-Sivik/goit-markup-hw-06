@@ -844,17 +844,18 @@ img {
   transition: fill 250ms ease;
 }
 
-input[type="checkbox"]:checked + label .custom-checkbox {
+/* Checked: фон та обнулення бордеру */
+input[type="checkbox"]:checked + .checkbox-label .custom-checkbox {
   background-color: #404bbf;
-  border: none;
+  border: none; /* обнулення бордеру при checked */
 }
 
-/* Змінна для кольору при checked */
+/* Змінна для кольору іконки при checked */
 :root {
   --checkbox-checked-color: #f4f4fd;
 }
 
-/* Коли input checked, змінюємо fill іконки всередині span */
+/* Fill іконки при checked через змінну */
 input[type="checkbox"]:checked
   + .checkbox-label
   .custom-checkbox
@@ -864,7 +865,7 @@ input[type="checkbox"]:checked
 
 /* Hover та focus для бордеру custom-checkbox */
 .checkbox-label:hover .custom-checkbox,
-input[type="checkbox"]:focus + label .custom-checkbox {
+input[type="checkbox"]:focus + .checkbox-label .custom-checkbox {
   border-color: #4d5ae5;
 }
 
