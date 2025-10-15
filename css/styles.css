@@ -681,6 +681,7 @@ img {
 .modal-close:hover,
 .modal-close:focus {
   background-color: #404bbf;
+  border: none;
 }
 
 /* Іконка при наведенні */
@@ -844,10 +845,11 @@ img {
   transition: fill 250ms ease;
 }
 
-/* Checked: фон та обнулення бордеру */
+/* Checked: фон, обнулення бордеру та колір іконки */
 input[type="checkbox"]:checked + .checkbox-label .custom-checkbox {
   background-color: #404bbf;
-  border: none; /* обнулення бордеру при checked */
+  border: none;
+  fill: var(--color-fill-icon, #f4f4fd);
 }
 
 /* Змінна для кольору іконки при checked */
