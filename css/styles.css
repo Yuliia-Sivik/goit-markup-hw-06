@@ -413,13 +413,22 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/background-fon.jpg");
+    url("../images/mob-background-fon.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 320px;
   width: 100%;
   margin: 0 auto;
+}
+@media (min-resolution: 192dpi) {
+  .fon {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/mob-background-fon@2x.jpg");
+  }
 }
 .title {
   font-weight: 700;
@@ -457,7 +466,13 @@ button {
   .fon {
     padding: 112px 0;
     max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/tab-background-fon.jpg");
   }
+
   .title {
     font-size: 56px;
     line-height: 1.07;
@@ -467,15 +482,39 @@ button {
     margin-right: auto;
   }
 }
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .fon {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/tab-background-fon@2x.jpg");
+  }
+}
 @media screen and (min-width: 1158px) {
   .fon {
     padding: 188px 0;
     max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/background-fon.jpg");
   }
+
   .title {
     margin: 0 0 48px 0;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .fon {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/background-fon@2x.jpg");
   }
 }
 
