@@ -848,12 +848,12 @@ button {
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
-  text-align: center;
 }
 
 .container-footer {
   display: flex;
   flex-direction: column;
+  margin-bottom: 72px;
 }
 .logo-footer {
   display: inline-block;
@@ -880,7 +880,6 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 288px;
-  margin-bottom: 72px;
 }
 .text-social {
   font-weight: 500;
@@ -897,7 +896,6 @@ button {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-bottom: 72px;
   justify-content: center;
 }
 .social-item a {
@@ -1026,8 +1024,6 @@ button {
 
   /* третій блок — форма підписки */
   .subscribe-footer {
-    width: 100%;
-    max-width: 264px;
     margin-left: 0;
   }
 
@@ -1351,7 +1347,6 @@ button {
   display: flex;
   align-items: center; /* по вертикалі */
   justify-content: flex-start; /* по лівому краю */
-  gap: 8px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -1503,5 +1498,9 @@ input[type="checkbox"]:focus + .checkbox-label .custom-checkbox {
   .checkbox-line {
     display: inline;
     white-space: nowrap;
+  }
+  .modal {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
